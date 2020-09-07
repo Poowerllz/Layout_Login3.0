@@ -1,0 +1,145 @@
+
+.SIGN-UP{
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.SIGN-UP.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+body main .SIGN-UP{
+    
+    position: relative;
+    height: 70%;
+    width: 24vw;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* NOMES EM CIMA DA CAIXA DE INPUT */
+form .field-top-2 label {
+    margin-bottom: 5px;
+    margin-left: 12px;
+
+    color: white;
+
+    opacity: 60%;
+
+    font-size: 0.8rem;
+}
+
+/* CAIXAS DE INPUT */
+form .field-top-2 input {
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+    height: 3vh;
+    width: 90%;
+
+    background-color:rgba(250, 249, 255, 0.288);
+    color: white;
+
+    font-weight: bold;
+    font-style: bold;
+    
+    outline: none;
+
+    padding-left: 5%;
+    padding-right: 5%;  
+
+    transition-duration: 200ms;
+    transform: scale(1);
+
+}
+/* HOVER DO INPUT DE CIMA */
+form .field-top-2 input:hover {
+    transition-duration: 200ms;
+    transform: scale(1.1);
+}
+
+/* NOMES EM CIMA DAS CAIXAS GRID */
+form .grid label {
+    margin-bottom: 5px;
+    margin-left: 12px;
+
+    color: white;
+
+    opacity: 60%;
+
+    font-size: 0.6rem;
+}
+
+/* CAIXAS GRID */
+form .grid input {
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+    height: 3vh;
+    width: 6vw;
+
+    background-color:rgba(250, 249, 255, 0.288);
+    color: white;
+
+    font-weight: bold;
+    font-style: bold;
+    
+    outline: none;
+
+    padding-left: 5%;
+    padding-right: 5%;  
+
+    transition-duration: 200ms;
+    transform: scale(1);
+}
+
+/* HOVER DO INPUT GRID */
+form .grid input:hover {
+    transition-duration: 200ms;
+    transform: scale(1.1);
+}
+
+
+
+/*  */
+form .login {
+    padding:1vh;
+    width: 100%;
+    margin-top: 0.5vh;
+    border-radius: 16px;
+
+    background-color: rgb(57, 57, 235);
+    color: white;    
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    
+    outline: none;
+    transition-duration: 200ms;
+    transform: scale(1);
+    
+}
+
+/* BOTÃO DE SIGN IN */
+form .login:hover {
+    cursor:pointer;
+    transition-duration: 200ms;
+    transform: scale(1.1);
+    
+}
+
+form .grid{
+    display: grid;
+    grid-template-columns: 8vw 8vw;
+}
+
+
+
+
+
+

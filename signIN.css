@@ -1,0 +1,168 @@
+
+/*  */
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+}
+
+.SIGN-IN{
+    opacity: 1;
+    transition: opacity .5s linear;
+}
+
+.SIGN-IN.hide{
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+body main .SIGN-IN{
+    
+    height: 70%;
+    width: 24vw;
+    
+    font-family: 'Open Sans', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FORMULÁRIO */
+form {
+    height: 37vh;
+    width: 15vw;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;   
+
+    justify-content: center;
+    align-items: left;
+}
+
+/* NOMES EM CIMA DAS CAIXAS DE INPUT */
+form .field-top label {
+    margin-bottom: 5px;
+    margin-left: 12px;
+
+    color: white;
+
+    opacity: 60%;
+
+    font-size: 0.8rem;
+}
+
+/* CAIXAS DE INPUT */
+form .field-top input {
+    border-radius: 16px;
+    margin-bottom: 10px;
+
+    height: 3vh;
+    width: 90%;
+
+    background-color:rgba(250, 249, 255, 0.288);
+    color: white;
+
+    font-weight: bold;
+    font-style: bold;
+    
+    outline: none;
+
+    padding-left: 5%;
+    padding-right: 5%;  
+
+    transition-duration: 200ms;
+    transform: scale(1);
+
+}
+
+form .field-top input:hover {
+    transition-duration: 200ms;
+    transform: scale(1.1);
+}
+
+/* DIV DE MARCAÇÃO ACIMA DO BOTÃO (SIGN IN) */
+form .field-bot {
+    display: flex;
+    margin-top: 0.5vh;
+}
+/* BOX DE MARCAÇÃO */
+form .field-bot input {
+    display: flex;
+
+    height: 20px;
+    width: 15px;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+form .field-bot input:checked {
+    display: flex;
+
+    background-color: rgb(57, 57, 235);
+
+    width: 2.4vw;
+    height: 2.4vh;
+}
+
+form .field-bot label {
+    margin-left: 0.2vw;
+    margin-bottom: 0.5vh;
+    text-align: center;
+}
+
+form .field-bot label h3 {
+    margin-bottom: 1vh;
+}
+
+/*  */
+form .login {
+    background-color: rgb(57, 57, 235);
+    color: white;    
+    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    
+    outline: none;
+    transition-duration: 200ms;
+    transform: scale(1);
+}
+
+/* BOTÃO DE SIGN IN */
+form .login:hover {
+    cursor:pointer;
+    transition-duration: 200ms;
+    transform: scale(1.1);
+    
+}
+
+body main div footer{
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body main div .line-SIGN{
+    background-color:white;
+    height: 2px;
+    width: 15vw;
+}
+
+body main div a{
+    color: white;
+    margin-top: 2vh;
+}
+
+body main div footer a h5:hover{
+transition-duration: 400ms;
+color: red;
+}

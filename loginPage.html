@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LoginPage</title>
+
+        <link rel="stylesheet" href="Global.css">
+        <link rel="stylesheet" href="signIN.css">
+        <link rel="stylesheet" href="signUP.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;1,700&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <main>
+            <div class="box">
+                <div class="background"></div>
+                    <div class="btn">
+                        <button onclick="mostrar1();">
+                            <h5>SIGN IN</h5>
+                            <div class="line-SIGNIN" Id="Page1"></div>
+                        </button>
+
+                        <button class="SIGNUP" onclick="ocultar1();">
+                            <h5>SIGN UP</h5>
+
+                            <div class="line-SIGNUP" Id="Page2"></div>
+                        </button>
+                    </div>
+                    <div class="SIGN-IN" Id="1Page">
+                        <form>
+                            <div class="field-top">
+                                <label for="name">USERNAME</label>
+                                <input class="user" type="text" name="user" id="Username">
+                            <label for="pass">PASSWORD</label>
+                            <input type="password" class="pass" name="pass" id="Password">
+                            <div class="field-bot">
+                                <input type="checkbox" onclick="Keep();">
+                                <label for="keep"><h3>Keep me signed in</h3></label>
+                            </div>
+                            <button class="login">SIGN IN</button>
+                        </div>
+                    </form>
+                    <footer>
+                        <div class="line-SIGN">
+                        </div>
+                        <a href="">
+                            <h5>Forgot Password? </h5>
+                        </a>
+                    </footer>
+                </div>
+
+                <div class ="SIGN-UP" id="2Page">
+                    <form class="form-UP">
+                        <div class="field-top-2">
+                            <label for="complete-name">COMPLETE NAME</label>
+                            <input class="complete-name" type="text" name="complete-name">
+
+                            <label for="username">USERNAME</label>
+                            <input type="text" class="username" name="username"">
+
+                            <label for="e-mail">E-MAIL</label>
+                            <input type="text" class="e-mail" type="text" name="e-mail">
+                        </div>
+                            
+                            <div class="grid">
+
+                                <div class="grid1">
+                                    <label for="cpf">CPF</label>
+                                    <input type="text" class="cpf" name="cpf">
+                                    
+                                    <label for="password-2" class="password-2">PASSWORD</label>
+                                    <input type="password" class="date" name="password-2">
+                                </div>
+                                
+                                <div class="grid2">
+                                    <label for="date-of-birth">DATE OF BIRTH</label>
+                                    <input type="date" class="date-of-birth" name="date-of-birth">
+                                    
+                                    <label for="repass" >RE - PASSWORD</label>
+                                    <input type="password" class="repass" name="repass">
+                                </div>
+                                
+                            </div>
+                                
+                            <button class="login">SIGN UP</button>
+                    </form>
+                    
+                </div>
+            </main>
+        </body>
+
+        <script type="text/javascript" src="loginPage.js"></script>
+    </html>
